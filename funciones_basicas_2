@@ -1,0 +1,54 @@
+# Cuenta regresiva
+def countdown(numero):
+    if numero < 0:
+        return []
+    return list(range(numero, -1, -1))
+resultado = countdown(5)
+print(resultado)
+
+# Imprimir y devolver
+def imprimir_y_devolver(lista):
+    if len(lista) >= 2:
+        print(lista[0])
+        return lista[1]
+    else:
+        return None
+mi_lista = [1, 2]
+resultado = imprimir_y_devolver(mi_lista)
+print(resultado)
+
+# Primero más longitud
+def primero_mas_longitud(lista):
+    if len(lista) > 0:
+        return lista[0] + len(lista)
+    else:
+        return None
+mi_lista = [1, 2, 3, 4, 5]
+resultado = primero_mas_longitud(mi_lista)
+print(resultado)
+
+
+# Valores mayores que el segundo
+def valores_mayores_que_el_segundo(lista):
+    if len(lista) >= 2:
+        segundo_valor = lista[1]
+        nueva_lista = [valor for valor in lista if valor > segundo_valor]
+        print(len(nueva_lista))
+        return nueva_lista
+    else:
+        return False
+mi_lista = [5, 2, 3, 2, 1, 4]
+resultado = valores_mayores_que_el_segundo(mi_lista)
+print(resultado)
+
+
+# Esta longitud, ese valor
+def length_and_value(tamano, valor):
+    return [valor] * tamano
+resultado = length_and_value(4, 7)
+print(resultado)
+
+def length_and_value(tamano, valor):
+    return [valor] * tamano
+resultado = length_and_value(6, 2)
+print(resultado)
